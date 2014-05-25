@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Osk_Android_2.iml" filepath="$PROJECT_DIR$/Osk_Android_2.iml" />
       <module fileurl="file://$PROJECT_DIR$/Osk_and.iml" filepath="$PROJECT_DIR$/Osk_and.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
