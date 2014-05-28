@@ -7,21 +7,26 @@ import android.content.Intent;import android.os.Bundle;import android.view.View;
  * Created by keisuke on 2014/05/26.
  */
 public class TitleActivity extends Activity implements View.OnClickListener {
+        Button start;
+        Button exit;
+
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.title);
+        start = (Button)findViewById(R.id.start);
+        exit = (Button)findViewById(R.id.exit);
 
-        ((Button)findViewById(R.id.start)).setOnClickListener(this);
-        ((Button)findViewById(R.id.exit)).setOnClickListener(this);
+        (start).setOnClickListener(this);
+        (exit).setOnClickListener(this);
     }
 
     public void onClick(View v) {
-        if(v.equals(findViewById(R.id.start))) {
+        if(v.equals(start)) {
             Intent intent = new Intent(this, GameActivity.class);
             startActivity(intent);
         }
 
-        if(v.equals(findViewById(R.id.exit))) {
+        if(v.equals(exit)) {
             finish();
         }
 
