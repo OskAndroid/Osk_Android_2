@@ -6,27 +6,19 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     >
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/magic_image"
+        android:layout_weight="1"
+        android:src="@drawable/material_magic_circuit03"/>
     <TextView
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_weight="3"
         android:text="@string/magic"
-        android:layout_weight="10"
-        android:textSize="25pt"
         android:gravity="center"
-        />
-    <Button
-        android:text="@string/start"
-        android:id="@+id/start"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        ></Button>
-    <Button
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/exit"
-        android:text="@string/exit"
-        android:layout_gravity="bottom"
-        android:layout_weight="1"
-        />
+        android:textSize="20pt"
+        android:textColor="#ff0000"
+        android:id="@+id/magic_text" />
     </LinearLayout>
